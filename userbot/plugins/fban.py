@@ -6,7 +6,11 @@ from userbot import FBAN_USER, FBAN_REASON
 
 USER = str(FBAN_USER) if FBAN_USER else "1198905023"
 REASON = str(FBAN_REASON) if FBAN_REASON else "no reason given"
-@borg.on(admin_cmd(pattern=r"fban"))
+
+
+
+
+@bot.on(admin_cmd(pattern=r"fban"))
 
 async def _(event):
     chat = await event.get_chat()            
