@@ -17,9 +17,9 @@ async def _(event):
     if event.fwd_from:
 
         return
-    await event.client.send_message(start)
+    await borg.send_message(start)
     await asyncio.sleep(2)
-    await event.client.send_message(fed1)
+    await borg.send_message(fed1)
     await asyncio.sleep(2)
-    await event.client.send_message(ban_msg)
+    await borg.send_message(ban_msg)
     await asyncio.sleep(2)
