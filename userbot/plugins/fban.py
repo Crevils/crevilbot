@@ -9,7 +9,7 @@ REASON = str(FBAN_REASON) if FBAN_REASON else "no reason given"
 
 
 
-@bot.on(admin_cmd(pattern=r"fban")
+@borg.on(admin_cmd(pattern=r"fban")
 async def _(event):
     if event.fwd_from:
         return
