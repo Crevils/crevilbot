@@ -13,9 +13,9 @@ async def _(event):
     if event.fwd_from:
 
         return
-    await borg.send_message("/start")
-    await asyncio.sleep(2)
-    await borg.send_message("/joinfed 70875a92-9b37-467e-abf1-a265d92221")
-    await asyncio.sleep(2)
-    await borg.send_message(f"/fban {USER} {REASON}")
-    await asyncio.sleep(2)
+        await borg.send_message("/start")
+        await asyncio.sleep(2)
+        await borg.send_message("/joinfed 70875a92-9b37-467e-abf1-a265d92221")
+        await asyncio.sleep(2)
+        await borg.send_message(f"/fban {USER} {REASON}")
+        await asyncio.sleep(2)
