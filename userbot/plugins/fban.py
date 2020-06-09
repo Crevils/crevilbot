@@ -9,9 +9,8 @@ REASON = str(FBAN_REASON) if FBAN_REASON else "no reason given"
 @borg.on(admin_cmd(pattern=r"fban"))
 
 async def _(event):
-
+    chat = await event.get_chat()            
     if event.fwd_from:
-    chat = await event.get_chat()
         return
             await borg.send_message(chat, "/start")
             await asyncio.sleep(2)
