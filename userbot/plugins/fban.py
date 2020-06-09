@@ -6,16 +6,19 @@ from userbot import FBAN_USER, FBAN_REASON
 
 USER = str(FBAN_USER) if FBAN_USER else "1198905023"
 REASON = str(FBAN_REASON) if FBAN_REASON else "no reason given"
-@borg.on(admin_cmd(pattern=r"fban"))
 
-async def _(event):
 
+
+@bot.on(admin_cmd(pattern=r"fban")
+async def hehehe(event):
     if event.fwd_from:
-
         return
-        await borg.send_message("/start")
-        await asyncio.sleep(2)
-        await borg.send_message("/joinfed 70875a92-9b37-467e-abf1-a265d92221")
-        await asyncio.sleep(2)
-        await borg.send_message(f"/fban {USER} {REASON}")
-        await asyncio.sleep(2)
+    chat = await event.get_chat()
+    if event.is_private:
+        return
+            await borg.send_message(chat, "/start")
+            await asyncio.sleep(2)
+            await borg.send_message(chat, "/joinfed 70875a92-9b37-467e-abf1-a265d92221")
+            await asyncio.sleep(2)
+            await borg.send_message(chat, f"/fban {USER} {REASON}")
+            await asyncio.sleep(2)
