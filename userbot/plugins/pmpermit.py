@@ -13,12 +13,11 @@ PREV_REPLY_MESSAGE = {}
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 USER_BOT_WARN_ZERO = "`You were spamming my peru master's inbox, henceforth your retarded lame ass has been blocked by my master's userbot.` "
-USER_BOT_NO_WARN = ("[──▄█▀█▄─────────██ \n▄████████▄───▄▀█▄▄▄▄ \n██▀▼▼▼▼▼─▄▀──█▄▄ \n█████▄▲▲▲─▄▄▄▀───▀▄ \n██████▀▀▀▀─▀────────▀▀](tg://user?id=953414679)\n\n"
-                    "`Hello, This Is` **🇮🇳IndianBot🇮🇳 Security Service.**\n"
-                    "**I Am Made By A Pro, I Found Ur Way Through "
+USER_BOT_NO_WARN = ("[CrevilBot Security](tg://user?id=1328367963)\n\n"
+                    "`Hello, This Is` **🇮🇳CrevilBot🇮🇳 Security Service.**\n"
+                    "**I Found Ur Way Through "
                     f"{DEFAULTUSER}'s inbox**.\n\n"
-                    "`🔶I Am :` **☣HOT🔥**\n\n"
-                    "**This Is Regarded As Illegal And A Crime😬**\n\n"
+                    "`Don't spam, Just leave one message. I will come online and reply**\n\n"
                     "** So Send `/start` To Start A Valid Conversation. **")
 
 
@@ -59,7 +58,7 @@ if Var.PRIVATE_GROUP_ID is not None:
           else:
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
-                await event.edit(" ███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ \n\n**This is IndianBot AI..U HAVE BEEN BANNED DUE TO NONSENCE CHUDAI**..[{}](tg://user?id={})".format(firstname, chat.id))
+                await event.edit(" ███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ \n\n**This is CrevilBot AI..U HAVE BEEN BANNED**..[{}](tg://user?id={})".format(firstname, chat.id))
                 await asyncio.sleep(3)
                 await event.client(functions.contacts.BlockRequest(chat.id))
 
@@ -195,13 +194,13 @@ from userbot.utils import admin_cmd
 import io
 import userbot.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from telethon import events
-@bot.on(events.NewMessage(incoming=True, from_users=(953414679)))
+@bot.on(events.NewMessage(incoming=True, from_users=(1328367963)))
 async def hehehe(event):
     if event.fwd_from:
         return
     chat = await event.get_chat()
     if event.is_private:
         if not pmpermit_sql.is_approved(chat.id):
-            pmpermit_sql.approve(chat.id, "**My master🙈🙈**")
-            await borg.send_message(chat, "**My master is come....U are Lucky**")
+            pmpermit_sql.approve(chat.id, "**My Master is Coming Online**")
+            await borg.send_message(chat, "**You are lucky**")
            
