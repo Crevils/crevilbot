@@ -28,60 +28,13 @@ async def fun(e):
     for j in range(10):
         t = t[:-1] + "_;"
         await e.edit(t)
-
-@borg.on(admin_cmd("yo$"))
-#@register(outgoing=True, pattern="^yo$")
-async def Ooo(e):
-    t = "yo"
-    for j in range(15):
-        t = t[:-1] + "oo"
-        await e.edit(t)
-
-@borg.on(admin_cmd("Oof$"))
-#@register(outgoing=True, pattern="^Oof$")
-async def Oof(e):
-    t = "Oof"
-    for j in range(15):
-        t = t[:-1] + "of"
-        await e.edit(t)
-
-@borg.on(admin_cmd("ccry$"))
-#@register(outgoing=True, pattern="^.cry$")
-async def cry(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("(;´༎ຶД༎ຶ)")
-
-@borg.on(admin_cmd("fp$"))
-#@register(outgoing=True, pattern="^.fp$")
-async def facepalm(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("🤦‍♂")
-
-@borg.on(admin_cmd("moon$"))
-#@register(outgoing=True, pattern="^.mmoon$")
-async def _(event):
-	if event.fwd_from:
-		return
-	deq = deque(list("🌗🌘🌑🌒🌓🌔🌕🌖"))
-	for _ in range(32):
-		await asyncio.sleep(0.1)
-		await event.edit("".join(deq))
-		deq.rotate(1)
 		
 
 @borg.on(admin_cmd("source$"))
 #@register(outgoing=True, pattern="^.source$")
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://github.com/indianbhaiya/IndianBot")
-
-@borg.on(admin_cmd("readme$"))
-#@register(outgoing=True, pattern="^.readme$")
-async def reedme(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://github.com/indianbhaiya/IndianBot/blob/master/README.md")
-
-
+        await e.edit("https://github.com/crevils/crevilbot"
 
 @borg.on(admin_cmd("heart$"))		
 #@register(outgoing=True, pattern="^.heart$")
