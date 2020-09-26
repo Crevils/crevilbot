@@ -26,7 +26,7 @@ async def _(event):
               await event.reply("```Abey (@NovelCoronaBot) Ko Unblock Kar```")
               return
           if response.text.startswith("Country"):
-             await event.edit("😐**Country Not Found**😐\n\n[👇👇👇👇👇👇👇👇👇\n 👉👉How to use 👈👈\n👆👆👆👆👆👆👆👆👆](https://t.me/pureindialover)")
+             await event.edit("😐**Country Not Found**😐\n\n[👇👇👇👇👇👇👇👇👇\n 👉👉How to use 👈👈\n👆👆👆👆👆👆👆👆👆](https://t.me/crevilSupport)")
           else: 
              await event.delete()
              await event.client.send_message(event.chat_id, response.message)
