@@ -4,8 +4,8 @@ from uniborg.util import admin_cmd
 
 RUNSREACTS = [
     "`Congratulations and BRAVO!`",
-    "`You did it! So proud of you!`",
-    "`This calls for celebrating! Congratulations!`",
+    "`WeW Peru! You did It`",
+    "`TAwesome man!`",
     "`I knew it was only a matter of time. Well done!`",
     "`Congratulations on your well-deserved success.`",
     "`Heartfelt congratulations to you.`",
