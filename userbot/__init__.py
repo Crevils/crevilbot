@@ -1,6 +1,3 @@
-'''
-Fix by @pureindialover
-'''
 import os
 import sys
 from telethon.sessions import StringSession
