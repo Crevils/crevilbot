@@ -2,7 +2,7 @@
 Syntax:
 .download
 .download url | file.name to download files from a Public Link
-Credits @TeleBotHelp """
+Credits @xDitya """
 
 import aiohttp
 import asyncio
