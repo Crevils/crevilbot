@@ -48,7 +48,7 @@ async def _(event):
     if not t_response:
         logger.info(e_response)
         logger.info(t_response)
-        await event.edit("@oo0pps .. something wrongings. Failed to decode QRCode")
+        await event.edit("oo0pps .. something wrongings. Failed to decode QRCode! Contact @CrevilSupport For Help")
         return
     soup = BeautifulSoup(t_response, "html.parser")
     qr_contents = soup.find_all("pre")[0].text
