@@ -18,12 +18,7 @@ Best User Bot To Manage Your Telegram Account
 <a href="https://t.me/CrevilOfficial"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 <a href="https://t.me/crevilSupport"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
-## HOW TO DEPLOY 
-
-<a href="https://youtu.be/xfHcm_e92eQ"><img src="https://img.shields.io/badge/How%20To-Deploy-red.svg?logo=Youtube"></a>
-
-
-### Host Friday In Heroku
+### Host Crevil In Heroku
 
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/crevils/crevilbot)
 
