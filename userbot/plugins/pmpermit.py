@@ -13,12 +13,11 @@ PREV_REPLY_MESSAGE = {}
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 USER_BOT_WARN_ZERO = "`You were spamming my peru master's inbox, henceforth your retarded lame ass has been blocked by my master's userbot.` "
-USER_BOT_NO_WARN = ("[CrevilBot Security](tg://user?id=1328367963)\n\n"
-                    "`Hello, This Is` **🇮🇳CrevilBot🇮🇳 Security Service.**\n"
-                    "**I Found Ur Way Through "
-                    f"{DEFAULTUSER}'s inbox**.\n\n"
-                    "`Don't spam, Just leave one message. I will come online and reply**\n\n"
-                    "** So Send `/start` To Start A Valid Conversation. **")
+USER_BOT_NO_WARN = ("         ** CrevilBot ** \n\n"
+                    "`Hello, This Is` **CrevilBot Security Service.**\n"
+                    f"{DEFAULTUSER}'is curently offline**.\n\n"
+                    "`Try Not Tospam, Just leave one message. I will come online and reply**\n\n"
+                    "** Send `/start` To Start A Valid Conversation. **")
 
 
 if Var.PRIVATE_GROUP_ID is not None:
@@ -58,7 +57,7 @@ if Var.PRIVATE_GROUP_ID is not None:
           else:
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
-                await event.edit(" ███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ \n\n**This is CrevilBot AI..U HAVE BEEN BANNED**..[{}](tg://user?id={})".format(firstname, chat.id))
+                await event.edit(" ░█████╗░██████╗░███████╗██╗░░░██╗██╗██╗░░░░░\n ██╔══██╗██╔══██╗██╔════╝██║░░░██║██║██║░░░░░\n ██║░░╚═╝██████╔╝█████╗░░╚██╗░██╔╝██║██║░░░░░\n ██║░░██╗██╔══██╗██╔══╝░░░╚████╔╝░██║██║░░░░░\n ╚█████╔╝██║░░██║███████╗░░╚██╔╝░░██║███████╗\n ░╚════╝░╚═╝░░╚═╝╚══════╝░░░╚═╝░░░╚═╝╚══════╝\n\n**YOU HAVE BEEN BANNED TILL FURTHER NOTICE**..[{}](tg://user?id={})".format(firstname, chat.id))
                 await asyncio.sleep(3)
                 await event.client(functions.contacts.BlockRequest(chat.id))
 
