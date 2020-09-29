@@ -12,10 +12,10 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars 
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
-    await alive.edit("**Crevil Is ALive!** \n`🇮🇳BOT Status : ` **☣Hot**\n\n"
+    await alive.edit("**Crevil Is ALive!** \n`BOT Status : ` **Working...**\n\n"
                      f"`My Master`: {DEFAULTUSER}\n\n"
                      "`Telethon version:` **6.0.9**\n`Python:` **3.7.4**\n"
                      "`Database Status:` **conected...**\n\n`I am Working Fine! Sir\n`"
-                     "**Bot Creator:** [CrevilBot](t.me/crevil)\n"
-                     "     [🇮🇳Deploy This crevilbot🇮🇳](https://github.com/crevils/crevilbot)") 
+                     "**Bot Creator:** [Crevil](t.me/crevil)\n"
+                     "[Deploy This crevilbot](https://github.com/crevils/crevilbot)") 
 
