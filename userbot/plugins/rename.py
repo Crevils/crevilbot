@@ -3,7 +3,7 @@ Syntax:
 .rename file.name
 .rnupload file.name
 .rnstreamupload file.name
-By @Ck_ATR"""
+This File Belongs To @CrevilOfficial"""
 import aiohttp
 import asyncio
 from datetime import datetime
@@ -45,7 +45,7 @@ def get_video_thumb(file, output=None, width=90):
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("Renaming in process 🙄🙇‍♂️🙇‍♂️🙇‍♀️ It might take some time if file size is big")
+    await event.edit("Renaming in process. It might take some time if file size is big")
     input_str = event.pattern_match.group(1)
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
@@ -77,7 +77,7 @@ async def _(event):
     thumb = None
     if os.path.exists(thumb_image_path):
         thumb = thumb_image_path
-    await event.edit("Rename & Upload in process 🙄🙇‍♂️🙇‍♂️🙇‍♀️ It might take some time if file size is big")
+    await event.edit("Rename & Upload in process. It might take some time if file size is big")
     input_str = event.pattern_match.group(1)
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
@@ -119,7 +119,7 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("Rename & Upload as Streamable in process 🙄🙇‍♂️🙇‍♂️🙇‍♀️ It might take some time if file size is big")
+    await event.edit("Rename & Upload as Streamable in process. It might take some time if file size is big")
     input_str = event.pattern_match.group(1)
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
@@ -167,7 +167,7 @@ async def _(event):
                     event.chat_id,
                     downloaded_file_name,
                     thumb=thumb,
-                    caption="reuploaded by [IndianBot](https://www.github.com/indianbhaiya/IndianBot",
+                    caption="reuploaded by [CrevilBot](https://www.github.com/crevils/crevilbot",
                     force_document=False,
                     allow_cache=False,
                     reply_to=event.message.id,
