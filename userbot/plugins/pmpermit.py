@@ -15,8 +15,8 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars 
 USER_BOT_WARN_ZERO = "`You were spamming my peru master's inbox, henceforth your retarded lame ass has been blocked by my master's userbot.` "
 USER_BOT_NO_WARN = ("         ** CrevilBot ** \n\n"
                     "`Hello, This Is` **CrevilBot Security Service.**\n"
-                    f"{DEFAULTUSER}'is curently offline**.\n\n"
-                    "`Try Not Tospam, Just leave one message. I will come online and reply**\n\n"
+                    f"{DEFAULTUSER} is curently offline**.\n\n"
+                    "`Try Not To spam, Just leave one message. I will come online and reply**\n\n"
                     "** Send `/start` To Start A Valid Conversation. **")
 
 
