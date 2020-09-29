@@ -37,18 +37,6 @@ async def source(e):
         await e.edit("https://github.com/crevils/crevilbot")
 
 
-@borg.on(admin_cmd("fap$"))
-#@register(outgoing=True, pattern="^.fap$")
-async def _(event):
-	if event.fwd_from:
-		return
-	deq = deque(list("🍆✊🏻💦"))
-	for _ in range(32):
-		await asyncio.sleep(0.1)
-		await event.edit("".join(deq))
-		deq.rotate(1)
-
-
 
 CMD_HELP.update({
     "leave": "Leave a Chat"
@@ -57,35 +45,5 @@ CMD_HELP.update({
     ";__;": "You try it!"
 })
 CMD_HELP.update({
-    "cry": "Cry"
-})
-CMD_HELP.update({
-    "fp": "Send face palm emoji."
-})
-CMD_HELP.update({
-    "moon": "Bot will send a cool moon animation."
-})
-CMD_HELP.update({
-    "clock": "Bot will send a cool clock animation."
-})
-CMD_HELP.update({
-    "readme": "Reedme."
-})
-CMD_HELP.update({
     "source": "Gives the source of your userbot"
-})
-CMD_HELP.update({
-    "myusernames": "List of Usernames owned by you."
-})
-CMD_HELP.update({
-    "oof": "Same as ;__; but ooof"
-})
-CMD_HELP.update({
-    "earth": "Sends Kensar Earth animation"
-})
-CMD_HELP.update({
-    "heart": "Try and you'll get your emotions back"
-})
-CMD_HELP.update({
-    "fap": "Faking orgasm"
 })
