@@ -191,8 +191,8 @@ async def _(event):
                     return
                 await silently_send_message(bot_conv, response)
                 await silently_send_message(bot_conv, sticker_emoji)
-                await silently_send_message(bot_conv, "/done")
-    await event.edit(f"sticker Added By [CrevilBot](t.me/crevilOfficial)")
+                await silently_send_message(bot_conv, "/done") 
+
     await event.edit(f"sticker added! Your pack can be found [here](t.me/addstickers/{packshortname})")
 
 
