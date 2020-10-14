@@ -54,11 +54,11 @@ async def _(event):
     #packshortname = f"CrevilBot_{userid}_ns"  # format: Uni_Borg_userid
     if userid == 1328367963:
         packname = f"@crevilOfficial Stickers"
-        packshortname = "CrevilBot's Stickers In Pocket"
+        packshortname = "CrevilBot_Sticker_Pack"
     else:
         packname = f"{user.first_name}'s CrevilBot Vol.{pack}"
         packshortname = f"CrevilBot_{userid}_kang"
-    await event.edit("`Look dat way,it's a girl!\nMeanwhile, lemme kang this stcker over hehe ヽ༼ ಠ益ಠ ༽ﾉ`")
+    await event.edit("`Kanging This Sticker....ヽ༼ ಠ益ಠ ༽ﾉ`")
 
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "@CrevilOfficial.png"
@@ -192,6 +192,7 @@ async def _(event):
                 await silently_send_message(bot_conv, response)
                 await silently_send_message(bot_conv, sticker_emoji)
                 await silently_send_message(bot_conv, "/done")
+    await event.edit(f"sticker Added By [CrevilBot](t.me/crevilOfficial)")
     await event.edit(f"sticker added! Your pack can be found [here](t.me/addstickers/{packshortname})")
 
 
