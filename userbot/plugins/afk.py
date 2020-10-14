@@ -24,7 +24,7 @@ async def set_not_afk(event):
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PLUGIN_CHANNEL,  # pylint:disable=E0602
-                "I am Going Offline. There Is No Place For Me!"
+                "My Master Came Online. (~˘▾˘)~"
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             await borg.send_message(  # pylint:disable=E0602
@@ -61,15 +61,15 @@ async def _(event):
             afk_time = datetime.datetime.now()  # pylint:disable=E0602
         USER_AFK = f"yes: {reason}"  # pylint:disable=E0602
         if reason:
-            await event.edit(f"Mera Malik Ja Raha Hai, and Reason is {reason}")
+            await event.edit(f"My Master Is Going Offline. Reason : {reason}")
         else:
-            await event.edit(f"Mera Malik Ja Raha Hai")
+            await event.edit(f"I Am Going Offline. Will Meet Soon")
         await asyncio.sleep(5)
         await event.delete()
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PLUGIN_CHANNEL,  # pylint:disable=E0602
-                f"Mera Malik Ja Raha Hai, and Reason is {reason}"
+                f"My Master Is Going Offline. Reason : {reason}"
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             logger.warn(str(e))  # pylint:disable=E0602
@@ -121,7 +121,7 @@ async def on_afk(event):
             else:
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
-        message_to_reply = f"My Master Has Been Gone For {afk_since}\nWhere He Is: Tereko kyu batau " + \
+        message_to_reply = f"My Master Has Been Gone For {afk_since}\n" + \
             f"\n\n__ I'll back in a few hours__\n**REASON**: {reason}" \
             if reason \
             else f"**Important Notice**\n\n[I am Ded Forever...](https://telegra.ph/file/3fa988b0b452e587e0062.png) "
