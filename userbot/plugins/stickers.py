@@ -52,7 +52,7 @@ async def _(event):
     userid = event.from_id
     #packname = f"Crevil™Stickers"
     #packshortname = f"CrevilBot_{userid}_ns"  # format: Uni_Borg_userid
-    if userid == 953414679:
+    if userid == 1328367963:
         packname = f"@crevilOfficial Stickers"
         packshortname = "@CrevilOfficial Stickers In Pocket"
     else:
@@ -67,7 +67,7 @@ async def _(event):
     if is_a_s:
         file_ext_ns_ion = "AnimatedSticker.tgs"
         uploaded_sticker = await borg.upload_file(file, file_name=file_ext_ns_ion)
-        if userid == 953414679:
+        if userid == 1328367963:
             packname = f"@crevilOfficial Animations"
             packshortname = "@CrevilOfficial Animated Pack"
         else:
@@ -134,7 +134,7 @@ async def _(event):
                     prevv = int(pack) - 1
                     packname = f"{user.first_name}'s CrevilBot Vol.{pack}"
                     packshortname = f"Vol_{pack}_with_{user.first_name}"
-                    #if userid == 948408212:
+                    #if userid == 1328367963:
                        # packname = f"{user.first_name}'s @CrevilOfficial Vol.{pack}"
                        # packshortname = "Vol._{pack}_@CrrvilOfficial_Sticker_In_my_Pocket"
                    # else:
