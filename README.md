@@ -23,6 +23,7 @@ Best User Bot To Manage Your Telegram Account
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/crevils/crevilbot)
 
 
+
 ### The Normal Way
 
 Simply clone the repository and run the main file:
@@ -49,6 +50,13 @@ class Development(Var):
   APP_ID = 6
   API_HASH = "eb06d4abfb49dc3eeb1aeb98ae0f581e"
 ```
+## Support
+Join [CrevilBot Support group](https://t.me/CrevilBotSupport) for updates and new plugin suggestions.
+Do fork and star the repo 
+
+### Session String 
+<a href="https://crevilbotsession.crevil.repl.run/" target="_blank"><img src="https://img.shields.io/badge/run-string__session.py-red?style=for-the-badge&logo=repl.it" alt="generate_string" /></a>
+
 
 
 ### UniBorg Configuration
